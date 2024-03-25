@@ -1,9 +1,9 @@
 # Simple-Calculator
 
 #Clear Button
-'''python
+```python
 Button1=Button(win,text="Clear",width=10,borderwidth=3,height=3,background="white",relief=SUNKEN,command=lambda: button_clear())
-'''
+```
 
 #Just Numbers
 Button_1=Button(win,text="1",width=10,borderwidth=3,height=3,background="white",relief=SUNKEN,command=lambda: button_actions(1))
