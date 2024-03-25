@@ -1,5 +1,97 @@
 # Simple-Calculator
 
+<h2>Taking Entry</h2>
+
+```python
+e=Entry(win,bg="light blue",width=35,borderwidth=5,relief=SUNKEN)
+e.grid(row=0,column=0,columnspan=3,padx=10,pady=10)
+```
+
+<h2>Taking new numbers after  storing the previous one.</h2>
+
+```python
+def button_actions(number):
+    # e.delete(0, END)
+    current_num=e.get()
+    e.delete(0, END)
+    e.insert(0, str(current_num) + str(number))
+```
+
+<h2>Clear Button Function.</h2>
+
+```python
+def button_clear():
+    e.delete(0, END)
+```
+
+<h2>Equal To Button Function.</h2>
+
+```python
+def button_equal():
+    second_number=e.get()
+    e.delete(0, END)
+    
+    if math=="addition":
+        e.insert(0, f_number+int(second_number))
+    elif math=="substraction":
+        e.insert(0, f_number-int(second_number))
+    elif math=="multiplication":
+        e.insert(0, f_number*int(second_number))
+    elif math=="division":
+        e.insert(0, f_number/int(second_number))
+    else:
+        e.insert(0, "This wasn't suppose to happen.")
+```
+
+<h2>Addition Button Function.</h2>
+
+```python
+def button_add():
+    first_number=e.get()
+    global f_number
+    f_number=int(first_number)
+    global math
+    math="addition"
+    e.delete(0, END)
+```
+
+<h2>Substraction Button Function.</h2>
+
+```python
+def button_sub():
+    first_number=e.get()
+    global f_number
+    f_number=int(first_number)
+    global math
+    math="substraction"
+    e.delete(0, END)
+```
+
+<h2>Multiplication Button Function.</h2>
+
+```python
+def button_multiply():
+    first_number=e.get()
+    global f_number
+    f_number=int(first_number)
+    global math
+    math="multiplication"
+    e.delete(0, END)
+```
+
+<h2>Division Button Function.</h2>
+
+```python
+def button_division():
+    first_number=e.get()
+    global f_number
+    f_number=int(first_number)
+    global math
+    math="division"
+    e.delete(0, END)
+```
+
+
 <h2>Clear Button</h2>
 
 ```python
@@ -55,3 +147,5 @@ Button_13.grid(row=5,column=0)
 Button_14.grid(row=5,column=1)
 Button_15.grid(row=5,column=2)
 ```
+
+#Thank-you.
