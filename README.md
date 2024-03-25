@@ -1,4 +1,4 @@
-# Simple-Calculator
+# Simple-Calculator-GUI
 
 <h2>Taking Entry</h2>
 
